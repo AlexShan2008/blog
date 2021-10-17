@@ -1,4 +1,5 @@
 import cn from 'classnames'
+import Image from 'next/image'
 import Link from 'next/link'
 
 type Props = {
@@ -9,7 +10,7 @@ type Props = {
 
 const CoverImage = ({ title, src, slug }: Props) => {
   const image = (
-    <img
+    <Image
       src={src}
       alt={`Cover Image for ${title}`}
       className={cn('shadow-small', {
