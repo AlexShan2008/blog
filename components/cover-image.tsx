@@ -1,5 +1,4 @@
 import cn from 'classnames'
-import Image from 'next/image'
 import Link from 'next/link'
 
 type Props = {
@@ -10,7 +9,8 @@ type Props = {
 
 const CoverImage = ({ title, src, slug }: Props) => {
   const image = (
-    <Image
+    // eslint-disable-next-line @next/next/no-img-element
+    <img
       src={src}
       alt={`Cover Image for ${title}`}
       className={cn('shadow-small', {
