@@ -1,6 +1,6 @@
-import Container from './container'
 import cn from 'classnames'
 import { EXAMPLE_PATH } from '../lib/constants'
+import Container from './container'
 
 type Props = {
   preview?: boolean
@@ -23,7 +23,7 @@ const Alert = ({ preview }: Props) => {
                 href="/api/exit-preview"
                 className="underline hover:text-cyan duration-200 transition-colors"
               >
-                Click here
+                Click here to enable live updates.
               </a>{' '}
               to exit preview mode.
             </>
