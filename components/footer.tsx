@@ -1,5 +1,6 @@
 import { EXAMPLE_PATH } from '../lib/constants'
 import Container from './container'
+import Copyright from './copyright'
 
 const Footer = () => {
   return (
@@ -24,6 +25,7 @@ const Footer = () => {
             </a>
           </div>
         </div>
+        <Copyright />
       </Container>
     </footer>
   )
