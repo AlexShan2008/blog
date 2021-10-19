@@ -7,6 +7,17 @@
 /* Stop purging. */
 
 /* Write you own custom component styles here */
+.title {
+  font-size: 1.5rem;
+}
+
+.border-top {
+  border-top: 1px solid #eaeaea;
+}
+
+.border-right {
+  border-right: 1px solid #333;
+}
 
 /* Start purging... */
 @tailwind utilities;

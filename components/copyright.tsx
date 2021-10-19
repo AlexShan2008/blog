@@ -5,13 +5,12 @@ import ProTip from './pro-tip'
 
 export default function Copyright() {
   return (
-    <Typography variant="body2" color="text.secondary" align="center">
-      {'Copyright © '}
-      <MuiLink color="inherit" href="https://mui.com/">
-        Your Website
+    <Typography variant="body2" color="text.secondary">
+      © {new Date().getFullYear()} By Alex Shan
+      <br />
+      <MuiLink color="inherit" href="https://alexshan.com/">
+        https://alexshan.com/
       </MuiLink>{' '}
-      {new Date().getFullYear()}.
-      <ProTip />
     </Typography>
   )
 }
