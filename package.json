@@ -4,6 +4,7 @@
     "dev": "next",
     "build": "next build",
     "start": "next start",
+    "export": "next build && next export",
     "commit": "cz",
     "typecheck": "tsc",
     "lint": "next lint",
