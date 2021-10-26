@@ -11,6 +11,7 @@ const Intro = () => {
         <section>
           <h4 className="font-bold text-xl mb-2">A Bit About Me</h4>
           <p className="text-base mb-5">
+            {/* eslint-disable-next-line react/no-unescaped-entities */}
             I'm a front-end developer. Aiming to be a problem terminator,
             through strong sense of responsibility and learning and working
             tirelessly.
