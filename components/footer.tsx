@@ -7,7 +7,7 @@ import Copyright from './copyright'
 const Footer = () => {
   return (
     <Container>
-      <div className="py-28 flex flex-col lg:flex-row items-center">
+      <div className="py-10 flex flex-col lg:flex-row items-center">
         <div className="flex flex-col justify-center flex-1">
           <h3 className="font-bold mb-2">
             <EmailIcon fontSize="large" />
