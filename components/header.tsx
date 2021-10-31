@@ -1,6 +1,6 @@
 // import Image from 'next/image'
 import cn from 'classnames'
-import Link from './link'
+import Link from '@/components/link'
 
 const menus = [
   {

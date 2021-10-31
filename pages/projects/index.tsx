@@ -18,7 +18,7 @@ const Projects = ({ allPosts }: Props) => {
         <Head>
           <title>AlexShan&apos;s Blog</title>
         </Head>
-        <Container>Contact</Container>
+        <Container>Projects</Container>
       </Layout>
     </>
   )

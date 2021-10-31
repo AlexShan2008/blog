@@ -6,7 +6,7 @@ const Intro = () => {
       <div className="flex-1">
         <img className="portrait" src="/assets/portrait.webp" alt="protrait" />
       </div>
-      <div className="flex-1">
+      <div className="flex-1 p-5">
         <h2 className="font-bold text-7xl mb-5">Hello, 你好！</h2>
         <section>
           <h4 className="font-bold text-xl mb-2">A Bit About Me</h4>
@@ -23,21 +23,21 @@ const Intro = () => {
             className="p-1 no-underline title font-bold"
             underline="none"
           >
-            <div className="link-wrapper bg-yellow-200">Resume</div>
+            <div className="link-wrapper bg-yellow-200 button">Resume</div>
           </Link>
           <Link
             href="/projects"
             className="p-1 no-underline title font-bold"
             underline="none"
           >
-            <div className="link-wrapper bg-blue-200">Projects</div>
+            <div className="link-wrapper bg-blue-200 button">Projects</div>
           </Link>
           <Link
             href="/contact"
             className="p-1 no-underline title font-bold"
             underline="none"
           >
-            <div className="link-wrapper bg-green-200">Contact</div>
+            <div className="link-wrapper bg-green-200 button">Contact</div>
           </Link>
         </div>
       </div>
