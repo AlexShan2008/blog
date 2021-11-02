@@ -22,13 +22,15 @@ const Intro = () => {
             href="/resume"
             className="p-1 no-underline title font-bold"
             underline="none"
+            color="secondary"
           >
-            <div className="link-wrapper bg-yellow-200 button">Resume</div>
+            <div className="link-wrapper bg-gray-200 button">Resume</div>
           </Link>
           <Link
             href="/projects"
             className="p-1 no-underline title font-bold"
             underline="none"
+            color="secondary"
           >
             <div className="link-wrapper bg-blue-200 button">Projects</div>
           </Link>
@@ -36,6 +38,7 @@ const Intro = () => {
             href="/contact"
             className="p-1 no-underline title font-bold"
             underline="none"
+            color="secondary"
           >
             <div className="link-wrapper bg-green-200 button">Contact</div>
           </Link>

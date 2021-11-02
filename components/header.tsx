@@ -37,7 +37,7 @@ const Header = () => {
               'border-right': index !== menus.length - 1,
             })}
           >
-            <Link className="px-2" href={menu.href} underline="none">
+            <Link className="px-2" href={menu.href} underline="hover">
               {menu.title}
             </Link>
           </div>

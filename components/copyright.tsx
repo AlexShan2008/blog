@@ -1,6 +1,5 @@
 import * as React from 'react'
 import Typography from '@mui/material/Typography'
-import ProTip from './pro-tip'
 
 export default function Copyright() {
   return (
