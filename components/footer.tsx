@@ -8,14 +8,14 @@ import Link from '@/components/link'
 const Footer = () => {
   return (
     <Container>
-      <div className="p-5 md:py-10 flex flex-col lg:flex-row  items-center md:items-center border-top">
+      <div className="p-5 md:py-6 flex flex-col lg:flex-row  items-center md:items-center border-top">
         <div className="flex flex-col items-center justify-center flex-1">
           <h5>
             <a
               href="mailto:alex.shantong.gmail.com"
               className="hover:underline"
             >
-              <EmailIcon fontSize="large" />
+              <EmailIcon fontSize="medium" />
             </a>
           </h5>
         </div>
@@ -29,7 +29,7 @@ const Footer = () => {
               underline="none"
               color="inherit"
             >
-              <GitHubIcon fontSize="large" />
+              <GitHubIcon fontSize="medium" />
             </Link>
           </h5>
         </div>
@@ -43,7 +43,7 @@ const Footer = () => {
               href="https://www.linkedin.com/in/alex-shan-0227b7118/"
               rel="noreferrer"
             >
-              <LinkedInIcon fontSize="large" />
+              <LinkedInIcon fontSize="medium" />
             </a>
           </h5>
         </div>

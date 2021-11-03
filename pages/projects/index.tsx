@@ -1,7 +1,8 @@
 import Head from 'next/head'
 import { getAllPosts } from '../../lib/api'
-import { CMS_NAME } from '../../lib/constants'
 import Post from '../../types/post'
+import { cards } from './cards'
+import ReviewCard from '@/components/card'
 import Container from '@/components/container'
 import Layout from '@/components/layout'
 
@@ -18,7 +19,11 @@ const Projects = ({ allPosts }: Props) => {
         <Head>
           <title>AlexShan&apos;s Blog</title>
         </Head>
-        <Container>Projects</Container>
+        <Container>
+          {cards.map((card, index) => (
+            <ReviewCard key={index} {...card} />
+          ))}
+        </Container>
       </Layout>
     </>
   )

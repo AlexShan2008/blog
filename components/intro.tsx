@@ -9,12 +9,11 @@ const Intro = () => {
       <div className="flex-1 p-5">
         <h2 className="font-bold text-7xl mb-5">Hello, 你好！</h2>
         <section>
-          <h4 className="font-bold text-xl mb-2">A Bit About Me</h4>
+          {/* <h4 className="font-bold text-xl mb-2">A Bit About Me</h4> */}
           <p className="text-base mb-5">
-            {/* eslint-disable-next-line react/no-unescaped-entities */}
-            I'm a front-end developer. Aiming to be a problem terminator,
-            through strong sense of responsibility and learning and working
-            tirelessly.
+            I am a front-end developer - who is also obsessed with outdoor
+            activities. I strive to be a problem terminator, through strong
+            sense of responsibility and relentless learning and working.
           </p>
         </section>
         <div className="flex">
