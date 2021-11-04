@@ -45,6 +45,10 @@ nav .active {
   transition: all 0.2s ease-in-out;
 }
 
+.high-light {
+  color: #000;
+}
+
 /* Start purging... */
 @tailwind utilities;
 /* Stop purging. */

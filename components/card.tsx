@@ -17,7 +17,21 @@ import { styled } from '@mui/material/styles'
 import Typography from '@mui/material/Typography'
 import Link from '@/components/link'
 
-const ExpandMore = styled((props) => {
+interface IExpendMoreProps {
+  expand?: boolean
+  onClick?: () => void
+}
+
+type IRoles =
+  | 'Frond-end developer'
+  | 'Back-end developer'
+  | 'Full-stack developer'
+  | 'Project Manager'
+  | 'UI/UX Designer'
+  | 'QA Engineer'
+  | 'DevOps Engineer'
+
+const ExpandMore = styled((props: IExpendMoreProps) => {
   const { expand, ...other } = props
   return <IconButton {...other} />
 })(({ theme, expand }) => ({
@@ -36,9 +50,11 @@ export interface IReviewCardProps {
   hasAvatar?: boolean
   hasMoreVertIcon?: boolean
   link?: string
+  role: IRoles
   hasExpand?: boolean
   summary?: string
-  stack?: string
+  stacks: string[]
+  achievements: string[]
 }
 
 export default function ReviewCard(props: IReviewCardProps) {
@@ -47,11 +63,13 @@ export default function ReviewCard(props: IReviewCardProps) {
     subtitle,
     banner,
     link,
+    role,
     hasAvatar = false,
     hasMoreVertIcon = false,
     hasExpand = false,
     summary,
-    stack,
+    stacks,
+    achievements,
   } = props
   const [expanded, setExpanded] = useState(false)
 
@@ -60,7 +78,7 @@ export default function ReviewCard(props: IReviewCardProps) {
   }
 
   return (
-    <Card sx={{ maxWidth: 345 }}>
+    <Card className="mx-6" sx={{ maxWidth: 345 }}>
       <CardHeader
         avatar={
           hasAvatar && (
@@ -79,17 +97,29 @@ export default function ReviewCard(props: IReviewCardProps) {
         title={title}
         subheader={subtitle}
       />
-      <CardMedia
-        component="img"
-        height="194"
-        image={banner}
-        alt="Paella dish"
-      />
-      <CardContent>
+      {link ? (
+        <Link href={link} underline="none" target="_blank">
+          <CardMedia
+            component="img"
+            height="194"
+            image={banner}
+            alt="Paella dish"
+          />
+        </Link>
+      ) : (
+        <CardMedia
+          component="img"
+          height="194"
+          image={banner}
+          alt="Paella dish"
+        />
+      )}
+
+      {/* <CardContent>
         <Typography variant="body2" color="text.secondary">
           {summary}
         </Typography>
-      </CardContent>
+      </CardContent> */}
       <CardActions disableSpacing>
         {/* <IconButton aria-label="add to favorites">
           <FavoriteIcon />
@@ -97,11 +127,9 @@ export default function ReviewCard(props: IReviewCardProps) {
         <IconButton aria-label="share">
           <ShareIcon />
         </IconButton> */}
-        {link && (
-          <Link href={link} underline="none" target="_blank">
-            <Button variant="text">LEARN MORE</Button>
-          </Link>
-        )}
+        {/* <Link href={link} underline="none" target="_blank">
+          <Button variant="text">LEARN MORE</Button>
+        </Link> */}
 
         {hasExpand && (
           <ExpandMore
@@ -118,7 +146,15 @@ export default function ReviewCard(props: IReviewCardProps) {
       {hasExpand && (
         <Collapse in={expanded} timeout="auto" unmountOnExit>
           <CardContent>
-            <Typography variant="body1" paragraph>
+            <Typography className="high-light" variant="body1" paragraph>
+              Role:
+            </Typography>
+
+            <Typography variant="body2" paragraph>
+              {role}
+            </Typography>
+
+            <Typography className="high-light" variant="body1" paragraph>
               Summary:
             </Typography>
 
@@ -126,18 +162,27 @@ export default function ReviewCard(props: IReviewCardProps) {
               {summary}
             </Typography>
 
-            <Typography variant="body1" paragraph>
-              Tech Stack:
-            </Typography>
-            <Typography variant="body2" paragraph>
-              {stack}
+            <Typography className="high-light" variant="body1" paragraph>
+              Tech Stacks:
             </Typography>
 
-            <Typography variant="body1" paragraph>
-              Achievement:
+            <Typography className="high-light" variant="body1" paragraph>
+              {stacks.map((stack, index) => (
+                <Typography key={index} variant="body2">
+                  {stack}
+                </Typography>
+              ))}
+            </Typography>
+
+            <Typography className="high-light" variant="body1" paragraph>
+              Achievements:
             </Typography>
             <Typography variant="body2" paragraph>
-              {stack}
+              {achievements.map((achievement, index) => (
+                <Typography key={index} variant="body2">
+                  {achievement}
+                </Typography>
+              ))}
             </Typography>
           </CardContent>
         </Collapse>
