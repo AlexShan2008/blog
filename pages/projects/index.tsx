@@ -21,7 +21,7 @@ const Projects = ({ allPosts }: Props) => {
           <title>AlexShan&apos;s Blog</title>
         </Head>
         <Container>
-          <Title text="Project cases" />
+          <Title text="Projects" />
           <div className="flex">
             {projects.map((card, index) => (
               <ReviewCard key={index} {...card} />

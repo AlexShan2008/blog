@@ -12,7 +12,7 @@ const Footer = () => {
         <div className="flex flex-col items-center justify-center flex-1">
           <h5>
             <a
-              href="mailto:alex.shantong.gmail.com"
+              href="mailto:alex.shantong@gmail.com"
               className="hover:underline"
             >
               <EmailIcon fontSize="medium" />

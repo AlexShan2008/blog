@@ -12,8 +12,8 @@ const menus = [
     href: '/projects',
   },
   {
-    title: 'Contact',
-    href: '/contact',
+    title: 'Contacts',
+    href: '/contacts',
   },
 ]
 
@@ -33,11 +33,11 @@ const Header = () => {
         {menus.map((menu, index) => (
           <div
             key={menu.href}
-            className={cn('px-2', {
+            className={cn('px-2 w-20 items-center', {
               'border-right': index !== menus.length - 1,
             })}
           >
-            <Link className="px-2" href={menu.href} underline="hover">
+            <Link href={menu.href} color="secondary" underline="hover">
               {menu.title}
             </Link>
           </div>

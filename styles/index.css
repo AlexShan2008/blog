@@ -36,10 +36,6 @@
   margin-right: 1rem;
 }
 
-nav .active {
-  color: var(--secondary-color);
-  font-weight: 600;
-}
 .button:hover {
   opacity: 0.65;
   transition: all 0.2s ease-in-out;
@@ -49,6 +45,9 @@ nav .active {
   color: #000;
 }
 
+.active {
+  color: var(--primary-color) !important;
+}
 /* Start purging... */
 @tailwind utilities;
 /* Stop purging. */
