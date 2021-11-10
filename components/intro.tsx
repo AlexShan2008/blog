@@ -23,7 +23,7 @@ const Intro = () => {
             underline="none"
             color="secondary"
           >
-            <div className="link-wrapper bg-gray-200 button">Resume</div>
+            <div className="link-wrapper  button">Resume</div>
           </Link>
           <Link
             href="/projects"
@@ -31,7 +31,7 @@ const Intro = () => {
             underline="none"
             color="secondary"
           >
-            <div className="link-wrapper bg-blue-200 button">Projects</div>
+            <div className="link-wrapper  button">Projects</div>
           </Link>
           <Link
             href="/contact"
@@ -39,7 +39,7 @@ const Intro = () => {
             underline="none"
             color="secondary"
           >
-            <div className="link-wrapper bg-green-200 button">Contact</div>
+            <div className="link-wrapper  button">Contact</div>
           </Link>
         </div>
       </div>
