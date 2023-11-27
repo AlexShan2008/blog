@@ -1,17 +1,11 @@
-import Image from 'next/image'
 import Link from './link'
 
 const Intro = () => {
   return (
     <section className="flex-col md:flex-row flex items-center md:justify-between mt-16 mb-16 md:mb-12">
       <div className="flex-1">
-        <Image
-          src="/assets/portrait.png"
-          alt="protrait"
-          width={500}
-          height={500}
-          className="portrait"
-        />
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img className="portrait" src="/assets/portrait.png" alt="protrait" />
       </div>
       <div className="flex-1 p-5">
         <h2 className="font-bold text-7xl mb-5">Hello, 你好！</h2>
