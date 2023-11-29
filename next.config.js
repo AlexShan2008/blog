@@ -5,4 +5,8 @@ module.exports = {
   // You can still use webpack 4 while upgrading to the latest version of Next.js by adding the "webpack5: false" flag
   // assetPrefix: isProduction ? '/portfolio/' : '',
   swcMinify: true,
+  images: {
+    loader: 'custom',
+    loaderFile: './lib/image-loader.ts',
+  },
 }
