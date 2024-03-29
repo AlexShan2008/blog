@@ -14,10 +14,10 @@ import TimelineOppositeContent from '@mui/lab/TimelineOppositeContent'
 import TimelineSeparator from '@mui/lab/TimelineSeparator'
 import Typography from '@mui/material/Typography'
 import Head from 'next/head'
-import { getAllPosts } from '../../lib/api'
-import Post from '../../types/post'
 import Container from '@/components/container'
 import Layout from '@/components/layout'
+import { getAllPosts } from '../../lib/api'
+import Post from '../../types/post'
 
 type Props = {
   allPosts: Post[]
@@ -52,9 +52,9 @@ const Resume = ({ allPosts }: Props) => {
               </TimelineSeparator>
               <TimelineContent sx={{ py: '12px', px: 2 }}>
                 <Typography variant="h5" component="span">
-                  Senior Front-end
+                  Senior Frontend developer
                 </Typography>
-                <Typography>Rightcapital</Typography>
+                <Typography>RightCapital</Typography>
               </TimelineContent>
             </TimelineItem>
 
@@ -76,7 +76,7 @@ const Resume = ({ allPosts }: Props) => {
               </TimelineSeparator>
               <TimelineContent sx={{ py: '12px', px: 2 }}>
                 <Typography variant="h5" component="span">
-                  Head of Front End
+                  Head of Frontend team
                 </Typography>
                 <Typography>Beijing Reyun Technology Co., Ltd.</Typography>
               </TimelineContent>
@@ -100,7 +100,7 @@ const Resume = ({ allPosts }: Props) => {
               </TimelineSeparator>
               <TimelineContent sx={{ py: '12px', px: 2 }}>
                 <Typography variant="h5" component="span">
-                  Senior Front-end
+                  Senior Frontend developer
                 </Typography>
                 <Typography>Keep on learning</Typography>
               </TimelineContent>

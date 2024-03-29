@@ -13,7 +13,7 @@ const Layout = ({ preview, children }: Props) => {
       <Meta />
       <div className="min-h-screen flex justify-between flex-col">
         <Header />
-        <main>{children}</main>
+        <main className="light">{children}</main>
         <Footer />
       </div>
     </>

@@ -16,7 +16,9 @@ const Intro = () => {
         />
       </div>
       <div className="flex-1 p-5">
-        <h2 className="font-bold text-7xl mb-5">Hello, 你好！</h2>
+        <h2 className="font-bold text-7xl mb-5 bg-text-gradient text-gradient">
+          Hello, 你好！
+        </h2>
         <section>
           {/* <h4 className="font-bold text-xl mb-2">A Bit About Me</h4> */}
           <p className="text-base mb-5">
