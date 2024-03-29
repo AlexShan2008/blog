@@ -3,13 +3,13 @@ import CardActions from '@mui/material/CardActions'
 import CardContent from '@mui/material/CardContent'
 import Typography from '@mui/material/Typography'
 import Head from 'next/head'
-import { getAllPosts } from '../../lib/api'
-import { contacts } from '../../lib/contacts'
-import Post from '../../types/post'
 import Container from '@/components/container'
 import Layout from '@/components/layout'
 import Link from '@/components/link'
 import Title from '@/components/title'
+import { getAllPosts } from '../../lib/api'
+import { contacts } from '../../lib/contacts'
+import Post from '../../types/post'
 
 type Props = {
   allPosts: Post[]

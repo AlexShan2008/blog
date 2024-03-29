@@ -1,11 +1,11 @@
 import Head from 'next/head'
-import { getAllPosts } from '../../lib/api'
-import { projects } from '../../lib/projects'
-import Post from '../../types/post'
 import ReviewCard from '@/components/card'
 import Container from '@/components/container'
 import Layout from '@/components/layout'
 import Title from '@/components/title'
+import { getAllPosts } from '../../lib/api'
+import { projects } from '../../lib/projects'
+import Post from '../../types/post'
 
 type Props = {
   allPosts: Post[]
