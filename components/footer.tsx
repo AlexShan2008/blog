@@ -1,9 +1,9 @@
 import EmailIcon from '@mui/icons-material/Email'
 import GitHubIcon from '@mui/icons-material/GitHub'
 import LinkedInIcon from '@mui/icons-material/LinkedIn'
+import Link from '@/components/link'
 import Container from './container'
 import Copyright from './copyright'
-import Link from '@/components/link'
 
 const Footer = () => {
   return (
