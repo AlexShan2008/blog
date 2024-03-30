@@ -19,7 +19,7 @@ export const contacts: IContactCardProps[] = [
     id: '3',
     type: 'LinkedIn',
     nickname: 'Alex Shan',
-    link: 'https://www.linkedin.com/in/alex-shan-0227b7118/',
+    link: 'https://www.linkedin.com/in/alex-s-0227b7118/',
     linkName: 'https://www.linkedin.com',
   },
   {

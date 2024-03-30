@@ -40,7 +40,7 @@ const Footer = () => {
           <h5 className="flex items-center">
             <a
               target="_blank"
-              href="https://www.linkedin.com/in/alex-shan-0227b7118/"
+              href="https://www.linkedin.com/in/alex-s-0227b7118/"
               rel="noreferrer"
             >
               <LinkedInIcon fontSize="medium" />
