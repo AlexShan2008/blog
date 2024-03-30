@@ -1,0 +1,22 @@
+name: 'Create Pull Request'
+
+on:
+  push:
+    branches:
+      - 'feature/**'
+
+jobs:
+  create_pull_request:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 'Checkout code'
+        uses: actions/checkout@v2
+
+      - name: 'Create Pull Request'
+        uses: repo-sync/pull-request@v2
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          pr_title: 'Automated Pull Request'
+          pr_body: 'This is an automated pull request.'
+          destination_branch: 'main'
+          source_branch: ''
