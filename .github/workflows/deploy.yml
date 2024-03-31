@@ -18,11 +18,14 @@ jobs:
           node-version: '20'
           cache: 'npm'
 
+      - name: Install pnpm
+        run: npm install -g pnpm
+
       - name: Install dependencies
-        run: npm install
+        run: pnpm install
 
       - name: Build project
-        run: npm run export
+        run: pnpm run export
 
       - name: Sync to production
         uses: easingthemes/ssh-deploy@v2.1.5
