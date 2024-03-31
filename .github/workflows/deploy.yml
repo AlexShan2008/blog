@@ -17,11 +17,14 @@ jobs:
         with:
           node-version: '20'
 
+      - name: Install pnpm
+        run: npm install pnpm -g
+
       - name: Install dependencies
-        run: npm install
+        run: pnpm install
 
       - name: Build project
-        run: npm run export
+        run: pnpm run export
 
       - name: Deploy to production
         uses: easingthemes/ssh-deploy@main
