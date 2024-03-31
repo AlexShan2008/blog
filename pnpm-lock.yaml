@@ -5,6 +5,9 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
+  '@emotion/cache':
+    specifier: ^11.11.0
+    version: 11.11.0
   '@emotion/react':
     specifier: ^11.5.0
     version: 11.11.3(@types/react@17.0.75)(react@18.2.0)
@@ -23,6 +26,9 @@ dependencies:
   classnames:
     specifier: 2.3.1
     version: 2.3.1
+  clsx:
+    specifier: ^2.1.0
+    version: 2.1.0
   date-fns:
     specifier: 2.21.3
     version: 2.21.3
