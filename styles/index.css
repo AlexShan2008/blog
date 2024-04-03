@@ -66,6 +66,12 @@
   width: 30rem;
   height: auto;
   border-radius: 50%;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.portrait:hover {
+  opacity: 1;
 }
 
 .link-wrapper {
